@@ -26,6 +26,10 @@ public class Arena {
     }
   }
 
+  public byte getNumBreeds() {
+    return numBreeds;
+  }
+
   public void advance(int numIterations) {
     for (int i = 0; i < numIterations; i++) {
       synchronized (lock) {
